@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChallengeHackerNews", "ChallengeHackerNews.csproj", "{866C625B-8B1F-43B8-9524-19C97BC1F668}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{866C625B-8B1F-43B8-9524-19C97BC1F668}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{866C625B-8B1F-43B8-9524-19C97BC1F668}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{866C625B-8B1F-43B8-9524-19C97BC1F668}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{866C625B-8B1F-43B8-9524-19C97BC1F668}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2FFE046B-AA79-41D8-8A43-83B66A440A4B}
+	EndGlobalSection
+EndGlobal
