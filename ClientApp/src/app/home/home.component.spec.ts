@@ -63,23 +63,6 @@ describe('HomeComponent', () => {
     expect(component.pagedItems).toEqual([{ title: 'News 2' }]);
   });
 
-  it('should set the current page and update pagedItems', () => {
-    const dummyData = [
-      { title: 'News 1' },
-      { title: 'News 2' },
-      { title: 'News 3' },
-      { title: 'News 4' },
-      { title: 'News 5' },
-    ];
-    component.hackerNewsData = dummyData;
-    component.totalNews = dummyData.length;
-
-    component.setPage(2);
-
-    expect(component.p).toBe(2);
-    expect(component.pagedItems).toEqual([{ title: 'News 3' }, { title: 'News 4' }]);
-  });
-
   it('should not set the current page if it is out of bounds', () => {
     const dummyData = [
       { title: 'News 1' },

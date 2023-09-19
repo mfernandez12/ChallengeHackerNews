@@ -1,5 +1,4 @@
 ﻿using ChallengeHackerNews.DTOs;
-using Microsoft.AspNetCore.Mvc;
 
 namespace ChallengeHackerNews.Services
 {
