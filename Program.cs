@@ -22,16 +22,6 @@ builder.Services.AddSingleton<IHackerNewsApiService>(sp =>
     return new HackerNewsApiService(httpClient, apiConfig.HackerNewsApiUrl, apiConfig.HackerNewsApiUrlById);
 });
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAngularApp", builder =>
-    {
-        builder.WithOrigins("https://localhost:44434")
-               .AllowAnyMethod()
-               .AllowAnyHeader();
-    });
-});
-
 var app = builder.Build();
 
 if (!app.Environment.IsDevelopment())

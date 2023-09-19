@@ -3,6 +3,7 @@ import { Inject, OnInit } from '@angular/core';
 import { Component } from '@angular/core';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { environment } from '../../environments/environment';
+import { timeout } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -26,7 +27,9 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.http.get<any[]>(this.apiUrl)
+    this.http.get<any[]>(this.apiUrl).pipe(
+      timeout(150000)
+    )
       .subscribe(data => {
         this.hackerNewsData = data;
         this.totalNews = data.length;

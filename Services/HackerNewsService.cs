@@ -4,7 +4,6 @@ namespace ChallengeHackerNews.Services
 {
     public class HackerNewsApiService : IHackerNewsApiService
     {
-        private readonly IConfiguration _configuration;
         private readonly HttpClient _httpClient;
         private readonly string _hackerNewsApiUrl, _hackerNewsApiUrlById;
 
@@ -27,6 +26,8 @@ namespace ChallengeHackerNews.Services
                     var hackerNewsDetail = await _httpClient.GetFromJsonAsync<HackerNewsDto>(_hackerNewsApiUrlById.Replace("{id}", hackerNewId.ToString()));
                     if (hackerNewsDetail?.Url != null)
                         newsList.Add(hackerNewsDetail);
+                    if (newsList.Count > 400)
+                        break;
                 }
 
                 return newsList;

@@ -1,10 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Caching.Memory;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+﻿using ChallengeHackerNews.DTOs;
 using ChallengeHackerNews.Services;
-using ChallengeHackerNews.DTOs;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Memory;
 
 namespace ChallengeHackerNews.Controllers
 {
